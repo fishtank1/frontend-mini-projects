@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Steps</title>
+    <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/166413.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-200">
+    <div class="m-auto mt-10 w-fit">
+        <div>
+            <div class="border-2 border-gray-300 bg-gray-300 progress-bar">
+                <div class="fill-progress"></div>
+            </div>
+            <div class="flex w-80 justify-between">
+                <div class="step-1 step bg-white text-gray-400 font-bold text-center pt-1 w-10 border-4 border-gray-300 h-10 rounded-full">1</div>
+                <div class="step-2 step bg-white text-gray-400 font-bold text-center pt-1 w-10 border-4 border-gray-300 h-10 rounded-full">2</div>
+                <div class="step-3 step bg-white text-gray-400 font-bold text-center pt-1 w-10 border-4 border-gray-300 h-10 rounded-full">3</div>
+                <div class="step-4 step bg-white text-gray-400 font-bold text-center pt-1 w-10 border-4 border-gray-300 h-10 rounded-full">4</div>
+            </div>
+        </div>
+        <div class="m-auto w-fit mt-5">
+            <button onclick="decrease()" id="previous" class="mr-2 border-2 border-blue-500 p-2 w-24 bg-blue-500 text-white font-bold rounded-md hover:shadow-xl">Prev</button>
+            <button onclick="increase()" id="next" class="border-2 border-blue-500 p-2 w-24 bg-blue-500 text-white font-bold rounded-md hover:shadow-xl">Next</button>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
